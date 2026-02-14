@@ -1,28 +1,11 @@
 /* 🎭 Premium Typography Import */
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 
-@theme {
-  /* Colors */
-  --color-border: hsl(var(--border));
-  --color-background: hsl(var(--background));
-  --color-foreground: hsl(var(--foreground));
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  --color-primary: hsl(var(--primary));
-  --color-secondary: hsl(var(--secondary));
-  --color-primary-foreground: hsl(var(--primary-foreground));
-  --color-card: hsl(var(--card));
-  --color-muted: hsl(var(--muted));
-  --color-muted-foreground: hsl(var(--muted-foreground));
-
-  /* Animation shortcuts */
-  --animate-float: float 6s ease-in-out infinite;
-  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
-  --animate-fade-in: fade-in 0.7s ease-out forwards;
-  --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.25s forwards;
-  --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.45s forwards;
-  --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.65s forwards;
-  --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
-  --animate-meteor: meteor 5s linear infinite;
+@layer base {
 
   /* 🌌 Animations */
   @keyframes float {
